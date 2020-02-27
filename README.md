@@ -36,7 +36,7 @@ docker run -it nursesenka/go go version
 ```
 
 ```
-go version go1.13.5 linux/amd64
+go version go1.14 linux/amd64
 ```
 
 ## 自動Buildについて
