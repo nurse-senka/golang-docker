@@ -24,6 +24,7 @@ RUN set -eux && \
   go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger && \
   go get -u github.com/oxequa/realize && \
   go get -u github.com/go-delve/delve/cmd/dlv && \
-  go build -o /go/bin/dlv github.com/go-delve/delve/cmd/dlv
+  go build -o /go/bin/dlv github.com/go-delve/delve/cmd/dlv && \
+  go get -tags 'mysql' -u github.com/golang-migrate/migrate/cmd/migrate
 
 WORKDIR /go
